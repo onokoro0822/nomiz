@@ -1,0 +1,55 @@
+.title {
+    color:red;
+    font-family:serif;
+    font-size:40px
+  }
+.big-title{
+  color:red;
+    font-family:serif;
+    font-size:70px
+}
+a{
+  color: #0091f2;
+  text-decoration: none;
+}
+  .header {
+    background-color: #68ede8;
+    color: #fff;
+    height: 90px;
+  }
+  .header a{
+    color:black;
+  }
+  .header-logo{
+    float: left;
+    font-size: 50px;
+    padding: 10px 10px;
+  }
+  li{
+    list-style: none;
+    float: left;
+    padding: 33px 20px;
+  }
+  .main {
+    max-height: 2000px;
+    margin:40px;
+  }
+  
+  .footer {
+    background-color: #2f5167;
+    color: #fff;
+    height: 40px;
+    padding: 40px;
+  }
+  .footer a{
+    color: #fff;
+  }
+  .footer-logo {
+    float: left;
+    font-size: 32px;
+  }
+  
+  .footer-list {
+    color:#fff;
+    float: right;
+  }
