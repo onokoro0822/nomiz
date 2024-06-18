@@ -1,0 +1,85 @@
+.title {
+    color:red;
+    font-family:serif;
+    font-size:40px
+  }
+.big-title{
+  color:red;
+    font-family:serif;
+    font-size:70px
+}
+a{
+  color: #0a90e9;
+  text-decoration: none;
+}
+  .header {
+    background-color: #68ede8;
+    color: #fff;
+    height: 90px;
+  }
+  .header a{
+    color:black;
+  }
+  .header-logo{
+    float: left;
+    font-size: 50px;
+    padding: 10px 10px;
+  }
+  .header-right {
+    float: right;
+    background-color: rgb(203, 203, 203);
+    transition: all 0.5s;
+  }
+  
+  .header-right:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .header-right a {
+    line-height: 90px;
+    padding: 0 25px;
+    color: black;
+    display: block;
+  }
+  li{
+    list-style: none;
+    float: left;
+    padding: 33px 20px;
+  }
+  .main {
+    max-height: 2000px;
+  }
+  .top-wrapper{
+    background-image:url(cheers.png);
+    background-size:cover;
+    text-align: center;
+  }
+  .footer {
+    background-color: #2f5167;
+    color: #fff;
+    height: 40px;
+    padding: 40px;
+  }
+  .footer a{
+    color: #fff;
+  }
+  .footer-logo {
+    float: left;
+    font-size: 32px;
+  }
+  
+  .footer-list {
+    color:#fff;
+    float: right;
+  }
+
+  .btn {
+    padding: 8px 24px;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+  }
+  .bul{
+    background-color:#0091f2; 
+  }
