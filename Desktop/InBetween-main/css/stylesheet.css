@@ -1,0 +1,219 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+    overflow-x: hidden; 
+    font-family: "Hiragino Kaku Gothic ProN";
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    /*padding: 0 15px;*/
+    margin: 0 auto;
+}
+
+.header-top {
+    text-align: center;
+}
+
+.toplogo {
+    margin-top: 0; /* 上の余白をゼロに設定 */
+    padding-top: 0; /* 上のパディングをゼロに設定 */
+    display: block; /* 画像要素の場合、display:block;を指定してブロック要素にする */
+}
+
+.header-under {
+    max-width: 1200px;
+    width: 100%;
+    float: left;
+    margin-right: 25px;
+    background-color: darkblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-under a {
+    width: 20%;
+    line-height: 65px;
+    padding: 0 25px;
+    color: rgb(255, 255, 255);
+    display: block;
+    float: left;
+    transition: all 0.5s;
+    text-align: center;
+}
+
+.header-under a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.h-u_smh{
+    max-width: 1200px;
+    width: 100%;
+    float: left;
+    margin-right: 25px;
+    background-color: darkblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+}
+
+.openbtn{
+    position: relative;/*ボタン内側の基点となるためrelativeを指定*/
+    background:darkblue !important;
+    cursor: pointer;
+    width: 50px;
+    height:50px;
+    border-radius: 5px;
+}
+
+/*ボタン内側*/
+.openbtn span{
+    display: inline-block;
+    transition: all .4s;/*アニメーションの設定*/
+    position: absolute;
+    left: 14px;
+    height: 3px;
+    border-radius: 2px;
+    background: #fff;
+    }
+
+
+.openbtn span:nth-of-type(1) {
+    top:15px; 
+    width: 45%;
+}
+
+.openbtn span:nth-of-type(2) {
+    top:23px;
+    width: 35%;
+}
+
+.openbtn span:nth-of-type(3) {
+    top:31px;
+    width: 20%;
+}
+
+/*activeクラスが付与されると線が回転して×になる*/
+
+.openbtn.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-135deg);
+    width: 30%;
+}
+
+.openbtn.active span:nth-of-type(2) {
+    opacity: 0;
+}
+
+.openbtn.active span:nth-of-type(3){
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(135deg);
+    width: 30%;
+}
+
+.menu {
+    display: none; /* デフォルトでは非表示 */
+    background-color: darkblue;
+    position: relative;
+    top: 50px; /* 必要に応じて調整 */
+    width: 100%;
+    text-align: center;
+}
+
+.menu a {
+    display: block;
+    padding: 10px 0;
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.menu.active {
+    display: block; /* メニューが表示される */
+}
+
+
+.social-icons {
+    margin-left: auto;
+    display: flex;
+    gap: 10px; /* アイコン間の隙間を調整 */
+}
+
+.social-icons a {
+    float: none; /* floatを無効にする */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px; /* アイコンの背景のサイズ */
+    height: 40px; /* アイコンの背景のサイズ */
+    transition: background-color 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* ホバー時の背景色 */
+    border-radius: 50%; /* 円形にするためのボーダー半径 */
+}
+
+.fa-brands {
+    font-size: 20px; /* アイコンのサイズを調整 */
+    color: white; /* アイコンの色を白に設定 */
+}
+
+.toplogo {
+    width: 100%;
+}
+
+.top-wrapper {
+    padding: 180px 15px 100px 15px;
+    background-image:url(../image/hennahito.jpg);
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+.top-wrapper h1 {
+    opacity: 1.0;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 70px;
+    letter-spacing: 5px;
+    color: rgb(236, 173, 197);
+    line-height: 2.5;
+}
+
+.top-wrapper h2{
+    font-family: 'Comic Sans MS';
+    font-size:60px;
+    line-height: 2;
+}
+
+.top-wrapper p {
+    font-family: "Shippori Antique B1", sans-serif;
+    font-size:30px;
+    font-weight: 200;
+    color: white;
+}
+
+.chukan{
+    color: red;
+    line-height: 3;
+}
